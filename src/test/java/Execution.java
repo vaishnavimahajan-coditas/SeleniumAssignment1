@@ -329,15 +329,14 @@ public class Execution {
         }
 
 
-
 //        //6 this also worked
+        driver.findElement(By.cssSelector("a.toggle-drawer")).click();
+
 //        System.out.println("Empty Message   : " + driver.findElement(By.cssSelector("p.empty")).getText());
 //        String emptyCart = driver.findElement(By.xpath("//p[@class='empty']")).getText();
 //        System.out.println("Empty Message  :  " + emptyCart);
         //6
-        System.out.println("where are we:" +driver.getCurrentUrl());
-
-        driver.findElement(By.cssSelector("a.toggle-drawer")).click();
+//        System.out.println("where are we:" +driver.getCurrentUrl());
 
         String empty = driver.findElement(By.cssSelector("p.empty")).getText();
         System.out.println("Empty message : " + empty);
